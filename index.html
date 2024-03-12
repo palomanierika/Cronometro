@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link rel="icon" type="image/x-icon" href="img/cronometro.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agregar el CDN de SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="temporizador">
+            <p><span id="tiempoTranscurrido">00:00:00</span></p>
+            <button id="startBtn">Empezar Cronómetro</button>
+            <button id="pauseBtn" class="hidden">Pausar Cronómetro</button>
+            <button id="stopBtn" class="hidden">Parar Cronómetro</button> <!-- Nuevo botón agregado -->
+            <button id="registrarBtn" class="hidden">Registrar Cronómetro</button>
+        </div>
+        <div class="registros">
+            <table id="tiemposTable">
+                <thead>
+                    <tr>
+                        <th>Batch</th>
+                        <th>Tiempo</th>
+                    </tr>
+                </thead>
+                <tbody id="tiemposBody"></tbody>
+            </table>
+            <button id="exportBtn">Exportar a Excel</button>
+            <button id="resetBtn">Limpiar Tabla</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

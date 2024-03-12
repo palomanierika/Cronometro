@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #191733;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    display: vertical flex;
+    align-items:start ;
+    padding: 20px;
+}
+
+#tiempoTranscurrido {
+    width: 500px;
+    background-color:#4E499E;
+    padding: 60px 0;
+    font-family: "Roboto Mono", monospace;
+    color: #f0f9ff;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px #191733;
+    margin: 0 auto; /* Alinear al centro */
+}
+
+.hidden {
+    display: none;
+}
+
+#stopBtn {
+background-color: #4E499E
+}
+
+#registrarBtn {
+    background-color:#D26B9D;
+    }
+
+#startBtn{
+ background-color: #4E499E;
+}
+.temporizador {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.temporizador button {
+    background-color: #D26B9D;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    height:110px;
+    width: 110px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.temporizador button:hover {
+    background-color: #D26B9D;
+}
+
+
+.registros {
+    text-align: center;
+    color:#191733;
+}
+
+.registros table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.registros th, .registros td {
+    border: 1px solid #191733 ;
+    padding: 8px;
+    width: 200px;
+}
+
+.registros th {
+    background-color: #D26B9D;
+   
+}
+
+.registros td {
+    text-align: center;
+
+}
+
+.registros button {
+    background-color: #A2BEDC;
+    color: #191733;
+    width: 200px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetBtn{
+background-color: #191733;
+color: #f0f9ff;
+}
